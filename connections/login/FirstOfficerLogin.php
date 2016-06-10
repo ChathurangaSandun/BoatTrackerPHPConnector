@@ -13,8 +13,8 @@ include_once '../../db/Database.php';
 $db = new database();
 $con = $db->getInstance();
 
-$username = $_GET['username'];
-$password = $_GET['password'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 
 
 if(!empty($username)&& !empty($password)){
@@ -41,6 +41,8 @@ if(!empty($username)&& !empty($password)){
 }else{
   echo -1;
 }
+
+
 
 
 
